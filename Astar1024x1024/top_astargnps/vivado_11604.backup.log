@@ -1,0 +1,248 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  8 22:21:17 2022
+# Process ID: 11604
+# Current directory: G:/01Astar/Astar512x512/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1636 G:\01Astar\Astar512x512\top_astargnps\top_astargnps.xpr
+# Log file: G:/01Astar/Astar512x512/top_astargnps/vivado.log
+# Journal file: G:/01Astar/Astar512x512/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/01Astar/Astar512x512/top_astargnps/top_astargnps.xpr
+INFO: [Project 1-313] Project file moved from 'G:/01Astar/Astar256x256/top_astargnps' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 808.430 ; gain = 206.738
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {262144}] [get_ips mapram1]
+generate_target all [get_files  G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mapram1'...
+catch { config_ip_cache -export [get_ips -all mapram1] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci] -no_script -sync -force -quiet
+reset_run mapram1_synth_1
+launch_runs -jobs 4 mapram1_synth_1
+[Fri Jul  8 22:25:34 2022] Launched mapram1_synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/mapram1_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci] -directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_A {9} CONFIG.Read_Width_A {9} CONFIG.Write_Width_B {9} CONFIG.Read_Width_B {9}] [get_ips openram8]
+generate_target all [get_files  G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'openram8'...
+catch { config_ip_cache -export [get_ips -all openram8] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci] -no_script -sync -force -quiet
+reset_run openram8_synth_1
+launch_runs -jobs 4 openram8_synth_1
+[Fri Jul  8 22:30:16 2022] Launched openram8_synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/openram8_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci] -directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_A {13} CONFIG.Read_Width_A {13} CONFIG.Write_Width_B {13} CONFIG.Read_Width_B {13}] [get_ips openram12]
+generate_target all [get_files  G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'openram12'...
+catch { config_ip_cache -export [get_ips -all openram12] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci] -no_script -sync -force -quiet
+reset_run openram12_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/openram12_synth_1
+
+launch_runs -jobs 4 openram12_synth_1
+[Fri Jul  8 22:30:51 2022] Launched openram12_synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/openram12_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci] -directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul  8 22:31:13 2022] Launched openram8_synth_1, openram12_synth_1, synth_1...
+Run output will be captured here:
+openram8_synth_1: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/openram8_synth_1/runme.log
+openram12_synth_1: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/openram12_synth_1/runme.log
+synth_1: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Fri Jul  8 22:31:14 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1300.008 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249A14E25
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2209.395 ; gain = 909.387
+set_property PROGRAM.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+set_property PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+set_property PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 2269.730 ; gain = 14.082
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-08 22:44:23
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'g:/01Astar/Astar512x512/MATLAB_512x512/map.coe' provided. It will be converted relative to IP Instance files '../../../../../MATLAB_512x512/map.coe'
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {G:/01Astar/Astar512x512/MATLAB_512x512/map.coe}] [get_ips mapram1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'g:/01Astar/Astar512x512/MATLAB_512x512/map.coe' provided. It will be converted relative to IP Instance files '../../../../../MATLAB_512x512/map.coe'
+generate_target all [get_files  G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mapram1'...
+generate_target: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2321.656 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all mapram1] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci] -no_script -sync -force -quiet
+reset_run mapram1_synth_1
+launch_runs -jobs 4 mapram1_synth_1
+[Fri Jul  8 22:52:48 2022] Launched mapram1_synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/mapram1_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci] -directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul  8 22:57:09 2022] Launched synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Fri Jul  8 22:57:09 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2341.969 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-08 23:06:10
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul  8 23:14:49 2022] Launched synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Fri Jul  8 23:14:49 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2346.281 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-08 23:26:26
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_A {9} CONFIG.Read_Width_A {9} CONFIG.Write_Width_B {9} CONFIG.Read_Width_B {9}] [get_ips closeram8]
+generate_target all [get_files  G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'closeram8'...
+catch { config_ip_cache -export [get_ips -all closeram8] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci] -no_script -sync -force -quiet
+reset_run closeram8_synth_1
+launch_runs -jobs 4 closeram8_synth_1
+[Fri Jul  8 23:31:09 2022] Launched closeram8_synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/closeram8_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci] -directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul  8 23:32:03 2022] Launched closeram8_synth_1, synth_1...
+Run output will be captured here:
+closeram8_synth_1: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/closeram8_synth_1/runme.log
+synth_1: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Fri Jul  8 23:32:03 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2509.664 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-08 23:43:39
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Load_Init_File {false} CONFIG.Coe_File {no_coe_file_loaded}] [get_ips mapram1]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Coe_File' from 'no_coe_file_loaded' to 'no_coe_file_loaded' has been ignored for IP 'mapram1'
+generate_target all [get_files  G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mapram1'...
+catch { config_ip_cache -export [get_ips -all mapram1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mapram1, cache-ID = 4a1e59b6c86f1579; cache size = 21.204 MB.
+catch { [ delete_ip_run [get_ips -all mapram1] ] }
+INFO: [Project 1-386] Moving file 'G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci' from fileset 'mapram1' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci'
+export_simulation -of_objects [get_files G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci] -directory G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Astar512x512/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Astar512x512/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Astar512x512/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci' is already up-to-date
+[Fri Jul  8 23:44:54 2022] Launched synth_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Fri Jul  8 23:44:54 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2509.879 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-08 23:54:33
+save_wave_config {G:/01Astar/Astar512x512/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  9 00:05:35 2022...

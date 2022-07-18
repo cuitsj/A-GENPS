@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file G:\01Astar\Astar128x128\top_astargnps\top_astargnps.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限
