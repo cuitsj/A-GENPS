@@ -26,13 +26,13 @@ This is the development board we use.
 The experimental results in the paper can be found in the respective folders, and some of the results obtained during the implementation are shown here.
 
 ![1](figures/64.png)
-This is the planning result of 64*64 map.
+This is the planning result of 64x64 map.
 ![1](figures/128.png)
 ![1](figures/128128.png)
 ![1](figures/1281282.png)
-These are the planning results for 128*128 maps, and all nodes that have been traversed are also marked in green in these maps.
+These are the planning results for 128x128 maps, and all nodes that have been traversed are also marked in green in these maps.
 
 ![1](figures/256.png)
 
-This is the planning result of the 256*256 map, and all nodes that have been traversed are also marked in green in the figure.
+This is the planning result of the 256x256 map, and all nodes that have been traversed are also marked in green in the figure.
 
