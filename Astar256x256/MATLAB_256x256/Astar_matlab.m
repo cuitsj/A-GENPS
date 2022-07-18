@@ -185,67 +185,67 @@ if path_flag == 1
 end
 toc   
 t2=cputime-t1
-%% 画图
-% %画栅格横线
-% for i = 0:row
-%     plot([0,column], [i, i], 'k');
-%     hold on
-% end
-%  %画栅格竖线   
-% for j = 0:column
-%      plot([j, j], [0, row], 'k');
-% end
-% 
-% axis equal%等比坐标轴，使得每个坐标轴都具有均匀的刻度间隔
-% xlim([0, column]);
-% ylim([0, row]); %xy轴上下限  
-% 
-% % 绘制障碍物、起止点颜色块
-% fill([start_point(1)-1, start_point(1), start_point(1), start_point(1)-1],...
-%     [start_point(2)-1, start_point(2)-1 , start_point(2), start_point(2)], 'b');
-% 
-% fill([terminal_point(1)-1, terminal_point(1), terminal_point(1), terminal_point(1)-1],...
-%     [terminal_point(2)-1, terminal_point(2)-1 , terminal_point(2), terminal_point(2)], 'r');
-% 
-% for i=1:row
-%     for j=1:column
-%         if map_read(i,j)==1
-%             fill([i-1, i, i, i-1],...
-%             [j-1, j-1 , j, j], 'k');
-%         end
-%     end
-% end
+% 画图
+%画栅格横线
+for i = 0:row
+    plot([0,column], [i, i], 'k');
+    hold on
+end
+ %画栅格竖线   
+for j = 0:column
+     plot([j, j], [0, row], 'k');
+end
 
-% for i = 1:size(openList,1)%返回矩阵行数
-%     temp = openList(i,3:4);
-%     fill([temp(1)-1, temp(1), temp(1), temp(1)-1],...
-%         [temp(2)-1, temp(2)-1 , temp(2), temp(2)], 'y');
-% end
-% 
-% for i = 1:size(closeList,1)%返回矩阵行数
-%     temp = closeList(i,3:4);
-%     fill([temp(1)-1, temp(1), temp(1), temp(1)-1],...
-%         [temp(2)-1, temp(2)-1 , temp(2), temp(2)], 'g');
-% end
+axis equal%等比坐标轴，使得每个坐标轴都具有均匀的刻度间隔
+xlim([0, column]);
+ylim([0, row]); %xy轴上下限  
 
-% for i = 1:size(path,1)%返回矩阵行数
-%     temp = path(i,1:2);
-%     fill([temp(1)-1, temp(1), temp(1), temp(1)-1],...
-%         [temp(2)-1, temp(2)-1 , temp(2), temp(2)], 'g');
-% end
-% 
-% if path_flag==1
-%     path(:,1) = path(:,1)-0.5;
-%     path(:,2) = path(:,2)-0.5;
-%     plot(path(:,1), path(:,2),'b','LineWidth',2);
-% end
-% 
-% % 绘制障碍物、起止点颜色块
-% fill([start_point(1)-1, start_point(1), start_point(1), start_point(1)-1],...
-%     [start_point(2)-1, start_point(2)-1 , start_point(2), start_point(2)], 'b');
-% 
-% fill([terminal_point(1)-1, terminal_point(1), terminal_point(1), terminal_point(1)-1],...
-%     [terminal_point(2)-1, terminal_point(2)-1 , terminal_point(2), terminal_point(2)], 'r');
+% 绘制障碍物、起止点颜色块
+fill([start_point(1)-1, start_point(1), start_point(1), start_point(1)-1],...
+    [start_point(2)-1, start_point(2)-1 , start_point(2), start_point(2)], 'b');
+
+fill([terminal_point(1)-1, terminal_point(1), terminal_point(1), terminal_point(1)-1],...
+    [terminal_point(2)-1, terminal_point(2)-1 , terminal_point(2), terminal_point(2)], 'r');
+
+for i=1:row
+    for j=1:column
+        if map_read(i,j)==1
+            fill([i-1, i, i, i-1],...
+            [j-1, j-1 , j, j], 'k');
+        end
+    end
+end
+
+for i = 1:size(openList,1)%返回矩阵行数
+    temp = openList(i,3:4);
+    fill([temp(1)-1, temp(1), temp(1), temp(1)-1],...
+        [temp(2)-1, temp(2)-1 , temp(2), temp(2)], 'y');
+end
+
+for i = 1:size(closeList,1)%返回矩阵行数
+    temp = closeList(i,3:4);
+    fill([temp(1)-1, temp(1), temp(1), temp(1)-1],...
+        [temp(2)-1, temp(2)-1 , temp(2), temp(2)], 'g');
+end
+
+for i = 1:size(path,1)%返回矩阵行数
+    temp = path(i,1:2);
+    fill([temp(1)-1, temp(1), temp(1), temp(1)-1],...
+        [temp(2)-1, temp(2)-1 , temp(2), temp(2)], 'g');
+end
+
+if path_flag==1
+    path(:,1) = path(:,1)-0.5;
+    path(:,2) = path(:,2)-0.5;
+    plot(path(:,1), path(:,2),'b','LineWidth',2);
+end
+
+% 绘制障碍物、起止点颜色块
+fill([start_point(1)-1, start_point(1), start_point(1), start_point(1)-1],...
+    [start_point(2)-1, start_point(2)-1 , start_point(2), start_point(2)], 'b');
+
+fill([terminal_point(1)-1, terminal_point(1), terminal_point(1), terminal_point(1)-1],...
+    [terminal_point(2)-1, terminal_point(2)-1 , terminal_point(2), terminal_point(2)], 'r');
 
 function child_nodes = child_nodes_cal(parent_node, map_read, closeList)
 
