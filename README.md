@@ -1,4 +1,4 @@
-# AstarGENPS
+# A*mGNPS
 
 #### Files introduction
 The folders are named Astar+map size. These folders contain the MATLAB_map size folder, top_astargnps folder and the recorded experiment results respectively. Among them, MATLAB_map size folder mainly contains MATLAB map generation and implementation of A* algorithm code, saved map data, screenshots of experimental results and MATLAB map generation and communication with FPGA serial port code. The top_astargnps folder is the FPGA project folder.
